@@ -7,7 +7,7 @@ Browser based testing suite provided by Jasmine
 ```$ npm install```
 
 Also, if you want to run any of the gulp configuration you will need gulp installed locally.
-The compiled CSS is already commited in the repo so there is no real reason to run gulp other than to Lint the JS or to 
+The compiled CSS is already committed in the repo so there is no real reason to run gulp other than to Lint the JS or to 
 play around with the Sass files and update the CSS.
 
 ## Running the application
