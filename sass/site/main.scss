@@ -1,0 +1,12 @@
+//////
+// Styles for the main site
+//
+// Author: seth.h.cohen@gmail.com
+// Template: index.html
+//////
+@import '../utilities/variables';
+
+body {
+  font: 100% $font-base;
+  color: $text-color--primary;
+}

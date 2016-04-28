@@ -1,0 +1,88 @@
+//////
+// Styles for Coinage app component
+//
+// Author: seth.h.cohen@gmail.com
+// Template: app/components/app/app.component.html
+//////
+@import '../../utilities/variables';
+@import '../../utilities/mixins';
+
+.CoinApp {
+  &-container {
+    max-width: 480px;
+    margin: 70px auto;
+  }
+  &-container,
+  &-header,
+  &-footer,
+  &-summary {
+    border: 1px solid $border-color--primary;
+  }
+  &-header {
+    padding-left: 20px;
+    font-size: 20px;
+    @media #{$small} {
+      text-align: center;
+      padding: 0;
+    }
+  }
+  &-summary-details,
+  &-header,
+  &-footer {
+    background: $bg-color--primary;
+  }
+  &-footer,
+  &-summary-details {
+    text-align: center;
+  }
+  &-form {
+    margin-top: 10px;
+    padding: 0 10px;
+    text-align: center;
+    &-input,
+    &-button {
+      width: 80px;
+      height: 24px;
+    }
+    &-button {
+      @include border-radius(3px);
+      border: 1px transparent;
+      background-color: $bg-color--light;
+    }
+    &-input,
+    &-button,
+    &-label {
+      @media #{$small} {
+        display: block;
+        margin: 4px auto;
+      }
+    }
+  }
+  &-summary {
+    margin: 3px;
+    &-labels,
+    &-coin {
+      padding: 2px 10px;
+      &.not_required {
+        color: $text-color--dull;
+      }
+    }
+    &-labels {
+      font-weight: 700;
+    }
+    &-labels-count,
+    &-coin-count {
+      float: right;
+    }
+    &-labels-symbol,
+    &-coin-symbol {
+      float: left;
+    }
+    &-labels:after,
+    &-coin:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}

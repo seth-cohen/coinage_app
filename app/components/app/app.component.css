@@ -1,0 +1,56 @@
+.CoinApp-container {
+  max-width: 480px;
+  margin: 70px auto; }
+
+.CoinApp-container, .CoinApp-header, .CoinApp-footer, .CoinApp-summary {
+  border: 1px solid #D8D8D8; }
+
+.CoinApp-header {
+  padding-left: 20px;
+  font-size: 20px; }
+  @media only screen and (max-width: 368px) {
+    .CoinApp-header {
+      text-align: center;
+      padding: 0; } }
+
+.CoinApp-summary-details, .CoinApp-header, .CoinApp-footer {
+  background: #BAABFA; }
+
+.CoinApp-footer, .CoinApp-summary-details {
+  text-align: center; }
+
+.CoinApp-form {
+  margin-top: 10px;
+  padding: 0 10px;
+  text-align: center; }
+  .CoinApp-form-input, .CoinApp-form-button {
+    width: 80px;
+    height: 24px; }
+  .CoinApp-form-button {
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    border-radius: 3px;
+    border: 1px transparent;
+    background-color: #C8C8C8; }
+  @media only screen and (max-width: 368px) {
+    .CoinApp-form-input, .CoinApp-form-button, .CoinApp-form-label {
+      display: block;
+      margin: 4px auto; } }
+
+.CoinApp-summary {
+  margin: 3px; }
+  .CoinApp-summary-labels, .CoinApp-summary-coin {
+    padding: 2px 10px; }
+    .CoinApp-summary-labels.not_required, .CoinApp-summary-coin.not_required {
+      color: #C8C8C8; }
+  .CoinApp-summary-labels {
+    font-weight: 700; }
+  .CoinApp-summary-labels-count, .CoinApp-summary-coin-count {
+    float: right; }
+  .CoinApp-summary-labels-symbol, .CoinApp-summary-coin-symbol {
+    float: left; }
+  .CoinApp-summary-labels:after, .CoinApp-summary-coin:after {
+    content: "";
+    display: table;
+    clear: both; }

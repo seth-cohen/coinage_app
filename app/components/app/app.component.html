@@ -1,0 +1,22 @@
+<div class="CoinApp-container">
+  <div class="CoinApp-header">{{appName}} {{appVersion}}</div>
+  <form class="CoinApp-form">
+    <label class="CoinApp-form-label" for="pence_input">Enter monetary value for conversion.</label>
+    <input [(ngModel)]="stringToConvert" name="pence_input" id="pence_input" type="text" class="CoinApp-form-input" required />
+    <input type="submit" class="CoinApp-form-button" (click)="doConvert($event)" value="Convert"/>
+  </form>
+  <div class="CoinApp-summary">
+    <div class="CoinApp-summary-details">
+      <span *ngIf="valueToConvert>0">Converting {{valueToConvert}} pennies to coins.</span>
+      <span *ngIf="valueToConvert==0">Please enter valid value to convert.</span>
+    </div>
+    <div class="CoinApp-summary-labels">
+      <span classs="CoinApp-summary-labels-symbol">Coin</span><span class="CoinApp-summary-labels-count">Amount</span>
+    </div>
+    <div *ngFor="#coin of coins" [ngClass]="{not_required: !coin.hasCount()}" class="CoinApp-summary-coin">
+      <span class="CoinApp-summary-coin-symbol">{{coin.symbol}}</span>
+      <span class="CoinApp-summary-coin-count">{{coin.count}}</span>
+    </div>
+  </div>
+  <div class="CoinApp-footer">&copy; {{appName}}</div>
+</div>
